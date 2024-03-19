@@ -1,0 +1,45 @@
+<div class="card">
+  <!--
+    Change the index by one depending on the arrow you press on
+    When pressing the card it should show the explanation
+
+    true should be a variable that keeps track if the card is up or down
+  -->
+  <div class="concept" id="concept">
+      <h2 id="concept_front"><%=@set_of_cards[@card_num]['concept'] %></h2>
+      <p class="hide" id="concept_back"><%=@set_of_cards[@card_num]['explanation'] %></p>
+  </div>
+
+  <div class="arrow_wrap">
+    <a href="/cards/<%=@id %>/<%=@card_num - 1%>">
+      <i>
+        <!--Left pointing arrow-->
+        &#8592;
+      </i>
+    </a>
+
+    <a href="/cards/<%=@id %>/<%=@card_num + 1%>">
+      <i>
+        <!--Right pointing arrow-->
+        &#8594;
+      </i>
+    </a>
+
+  </div>
+
+  <div class="diff_wrap">
+    <!--<p>How well do you understand the concept</p>-->
+    <div>
+      Really well
+    </div>
+    <div>
+      Good
+    </div>
+    <div>
+      Not enough
+    </div>
+    <div>
+      Not at all
+    </div>
+  </div>
+</div>

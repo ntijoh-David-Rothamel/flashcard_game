@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+
+header {
+    height: 10vh;
+    width: 100vw;
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 50vh;
+    width: 50vw;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.concept {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow_wrap {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.diff_wrap {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hide {
+    display: none;
+}
