@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+#TODO add some working github connection
+# to allow push and pull
+
 class App < Sinatra::Base
   require './db/seed'
 
@@ -18,6 +21,12 @@ class App < Sinatra::Base
 
   get '/cards' do
     erb :'/cards/index'
+  end
+
+  #TODO test of test
+  #FIXME please remove test
+  get '/test' do
+    erb :'/index'
   end
 
   get '/cards/:id/:card_num' do |id, card_num|
